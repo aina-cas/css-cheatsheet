@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recourses\styles.css">
+    <title>CSS Cheatsheet Project</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Cheatsheet</h1>
+    </header>
+    <main>
+
+<!-- Selectors section -->
+
+        <section>
+            <table class="selectors">
+                <thead>
+                    <tr>
+                      <th colspan="2">Selectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lighter">div</td>
+                        <td id="darker">all div tags</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">div, span</td>
+                        <td id="lighter">all div tags and all span tags</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">div span</td>
+                        <td id="darker">all span tags inside div</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">#content</td>
+                        <td id="lighter">element with ID "content"</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">.box</td>
+                        <td id="darker">all elemenst with class "box"</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">*</td>
+                        <td id="lighter">unversal, selects all elements</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">#box*</td>
+                        <td id="darker">all elements inside #box</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">a:link, <br>a:active, <br>a:visited</td>
+                        <td id="lighter">links in normal state, in clicked state, and visited state</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">a:hover</td>
+                        <td id="darker">link with mouse over it</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">div > span</td>
+                        <td id="lighter">all span's one-level deep in a div</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+ <!--  Box Model-->
+
+
+                <section>
+                    <table class="box_model">
+                        <thead>
+                            <tr>
+                                <th>Box Model</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="image"> <img src="recourses\images\boxmodel.gif" alt="Box Model"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+ <!--  Text section -->
+
+        <section class="tsection">
+            <table class="text">
+                <thead>
+                    <tr>
+                        <th colspan="2">Text</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lighter">font-family</td>
+                        <td id="darker">Font used, e.g. Helvetica, Arial</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">font-size</td>
+                        <td id="lighter">Text size, e.g. 50px, 3em</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">color</td>
+                        <td id="darker">Text color, #FFF</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">font-weight</td>
+                        <td id="lighter">How bold the text appears</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">font-style</td>
+                        <td id="darker">Style of font, e.g. italic</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">text-declaration</td>
+                        <td id="lighter">Sets a variety of effects on text, e.g. underline, overline, none</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">text-align</td>
+                        <td id="darker">Alligns text, e.g. center, right</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">line-height</td>
+                        <td id="lighter">Spacing between lines</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">letter-spacing</td>
+                        <td id="darker">Spacing between letters</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">text-indent</td>
+                        <td id="lighter">Indents the first line</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">text-transform</td>
+                        <td id="darker">Applies formating to text, e.g. uppcase, lowercase</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">vertical-align</td>
+                        <td id="lighter">Aligns relative to baseline</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+<!-- Padding, Border and Margin -->
+
+        <section>
+            <table class="border">
+                <thead>
+                    <tr>
+                        <th colspan="2">Border, Padding & Margin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lighter">border</td>
+                        <td id="darker">Sets border style for all borders in the format: border:(solid, dashed, dotted, double) (width) (color), e.g. border:solid 1px #000</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">border-top<br>border-bottom<br>border-left<br>border-right</td>
+                        <td id="lighter">Sets border style for a specific border (same property syntax used for padding and margin, e.g. margin-left</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+<!--  Syntax table-->
+
+            <table class="syntax">
+                <thead>
+                    <tr>
+                        <th colspan="2">Syntax</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lighter">selector {property:value;}</td>
+                        <td id="darker">Write styles for any element</td>
+                    </tr>
+                    <tr>
+                        <td id="darker"> link rel="stylesheet" href="./example.css>" </td>
+                        <td id="lighter">External Style Sheet</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter"> style > <br> selector{property:value;} <br>  /style></td>
+                        <td id="darker">Internal Style Sheet</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">  tag style="property:value"></td>
+                        <td id="lighter">Inline Style</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+ <!-- Positioning -->
+
+        <section>
+            <table class="positioning">
+                <thead>
+                    <tr>
+                        <th colspan="2">Positioning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lighter">position</td>
+                        <td id="darker">Places elements on screen, e.g. absolute, fixed, relative</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">float</td>
+                        <td id="lighter">Stacks elements horizontally in a particular direction, e.g. left</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">top, right, bottom, laft</td>
+                        <td id="darker">Specifies the offset used in absolute, fixed and relative positions</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">display</td>
+                        <td id="lighter">Sets how element is displayed in the doc flow, e.g. inline, block, none</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">z-index</td>
+                        <td id="darker">Set the stacking order of elements, e.g. z-index of 1 is bellow 2</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">overflow</td>
+                        <td id="lighter">Sets what happens to content outside of container, e.g. hidden, scroll</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">clear</td>
+                        <td id="darker">Specifies how elements behave, when they bump into each other</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+<!-- Pseudo Selectors-->
+
+        <section>
+            <table class="pseudo_selectors">
+                <thead>
+                    <tr>
+                        <th colspan="2">Pseudo Selectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lighter">:hover</td>
+                        <td id="darker">triggered when the user hovers over an element with the curso</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">:active</td>
+                        <td id="lighter">represents an element (such as a button) that is being activated by the user</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">:focus</td>
+                        <td id="darker">Represents an element (such as a form input) that has received focus</td>
+                    </tr>
+                    <tr>
+                        <td id="darker">:link</td>
+                        <td id="lighter">Represents an element that has not yet been visited</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">:visited</td>
+                        <td id="darker">Represents links that the user has already visited</td>
+                    </tr>
+                    <tr>
+                        <td id="darker" >:first-line</td>
+                        <td id="lighter">Aplies styles to the first line of a block-level element</td>
+                    </tr>
+                    <tr>
+                        <td id="lighter">:first-letter</td>
+                        <td id="darker">Applies styles to the first letter of the first line of a block-level element</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+ <!-- Units -->
+
+    <!-- <section>
+            <table class="units">
+                <thead>
+                    <tr>
+                        <th >Units</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="td">Length</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                    </tr>
+                    <tr>
+                        <td>pt</td>
+                    </tr>
+                    <tr>
+                        <td>px</td>
+                    </tr>
+                    <tr>
+                        <td id="td">Keywords</td>
+                    </tr>
+                    <tr>
+                        <td>bolder</td>
+                    </tr>
+                    <tr>
+                        <td>lighter</td>
+                    </tr>
+                    <tr>
+                        <td>larger</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  -->
+
+
+    </main>
+</body>
+</html>
